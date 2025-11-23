@@ -1,1 +1,7 @@
-{"assets":{"player":"assets/player.png","map":"assets/map01.png"},"notes":"Простой манифест. Добавь реальные файлы в папку public/assets/ если нужно."}
+{
+  "assets": {
+    "player": "assets/player.png",
+    "map": "assets/map01.png"
+  },
+  "notes": "Простой манифест. Добавь реальные файлы в папку public/assets/ если нужно."
+}
