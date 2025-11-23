@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background: #111;
+  color: #eee;
+}
+
+#ui {
+  width: 320px;
+  padding: 12px;
+  background: #1e1e1e;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.6);
+  overflow: auto;
+}
+
+#ui h1 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+#info div {
+  margin: 6px 0;
+}
+
+#game {
+  flex: 1;
+  background: linear-gradient(#2b2b2b, #222);
+  display: block;
+}

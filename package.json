@@ -1,0 +1,1 @@
+{"name":"webgpu-arena-fps-skeleton","version":"0.1.0","description":"Skeleton локального аренного FPS: Express + ws + простой клиент на canvas","main":"server.js","scripts":{"start":"node server.js"},"author":"pkv006-code","license":"MIT","dependencies":{"express":"^4.18.2","ws":"^8.13.0"}}
