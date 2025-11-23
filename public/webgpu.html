@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>WebGPU — Simple 3D Cube</title>
+  <title>WebGPU — Simple 3D FPS Demo</title>
   <style>
     html,body { height:100%; margin:0; background:#222; color:#ddd; font-family: Arial, sans-serif; }
     #wrap { display:flex; height:100%; }
@@ -11,19 +11,21 @@
     #canvas-container { flex:1; display:flex; align-items:center; justify-content:center; }
     canvas { width:100%; height:100%; max-width:1600px; max-height:1200px; display:block; }
     .warn { color: #ffb86b; }
+    .btn { padding:8px 10px; background:#2b2b2b; border:1px solid #444; color:#ddd; cursor:pointer; }
   </style>
 </head>
 <body>
   <div id="wrap">
     <div id="info">
-      <h2>WebGPU — Simple 3D Cube</h2>
+      <h2>WebGPU — Simple 3D FPS Demo</h2>
       <div id="status">status: <span id="stat">initializing...</span></div>
       <div id="details" style="margin-top:8px; font-size:13px; line-height:1.4"></div>
-      <p style="margin-top:12px; font-size:13px">Controls: none — cube rotates automatically.</p>
-      <p style="margin-top:10px; font-size:12px" class="warn">WebGPU: supported in modern Chromium-based browsers (Chrome/Edge) or in experimental builds. If you see "WebGPU not supported", try a recent Chrome/Edge or enable the feature flags.</p>
+      <p style="margin-top:12px; font-size:13px">Click the canvas and press the button below to lock the pointer and control the camera with the mouse. Use WASD to move.</p>
+      <button id="lockBtn" class="btn">Lock Pointer (Enable FPS Controls)</button>
+      <p style="margin-top:10px; font-size:12px" class="warn">WebGPU: supported in modern Chromium-based browsers (Chrome/Edge). If you see 'WebGPU not supported', try a recent Chromium build.</p>
     </div>
     <div id="canvas-container">
-      <canvas id="gpu-canvas"></canvas>
+      <canvas id="gpu-canvas" tabindex="0"></canvas>
     </div>
   </div>
 
