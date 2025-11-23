@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebGPU — Simple 3D Cube</title>
+  <style>
+    html,body { height:100%; margin:0; background:#222; color:#ddd; font-family: Arial, sans-serif; }
+    #wrap { display:flex; height:100%; }
+    #info { width:320px; padding:12px; background:#111; box-shadow:2px 0 8px rgba(0,0,0,.6); }
+    #canvas-container { flex:1; display:flex; align-items:center; justify-content:center; }
+    canvas { width:100%; height:100%; max-width:1600px; max-height:1200px; display:block; }
+    .warn { color: #ffb86b; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="info">
+      <h2>WebGPU — Simple 3D Cube</h2>
+      <div id="status">status: <span id="stat">initializing...</span></div>
+      <div id="details" style="margin-top:8px; font-size:13px; line-height:1.4"></div>
+      <p style="margin-top:12px; font-size:13px">Controls: none — cube rotates automatically.</p>
+      <p style="margin-top:10px; font-size:12px" class="warn">WebGPU: supported in modern Chromium-based browsers (Chrome/Edge) or in experimental builds. If you see "WebGPU not supported", try a recent Chrome/Edge or enable the feature flags.</p>
+    </div>
+    <div id="canvas-container">
+      <canvas id="gpu-canvas"></canvas>
+    </div>
+  </div>
+
+  <script type="module" src="webgpu.js"></script>
+</body>
+</html>
